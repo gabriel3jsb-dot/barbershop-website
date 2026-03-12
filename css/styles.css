@@ -1,0 +1,393 @@
+html{
+scroll-behavior:smooth;
+}
+body {
+background: #111;
+color: white;
+font-family: 'Poppins', sans-serif;
+}
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* NAVBAR */
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:#000;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#000;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+/* LOGO */
+
+.logo{
+font-family:'Bebas Neue', sans-serif;
+font-size:28px;
+letter-spacing:2px;
+}
+
+/* LINKS */
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-size:16px;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#c59d5f;
+}
+
+/* BOTON */
+
+.btn-reserva{
+background:#c59d5f;
+padding:10px 20px;
+border-radius:5px;
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+.btn-reserva:hover{
+background:#e0b46d;
+}
+/* HERO */
+
+.hero{
+height:90vh;
+background:url('../images/bg.png') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero-content{
+background:rgba(0,0,0,0.6);
+padding:40px;
+border-radius:10px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:20px;
+}
+
+.hero-btn{
+background:#c59d5f;
+padding:12px 25px;
+text-decoration:none;
+color:white;
+border-radius:5px;
+transition:0.3s;
+}
+
+.hero-btn:hover{
+background:#e0b46d;
+}
+/* SERVICES */
+
+.services{
+padding:80px 10%;
+background:#111;
+text-align:center;
+}
+
+.services h2{
+font-size:36px;
+margin-bottom:50px;
+}
+
+.services-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.service-card{
+background:#1a1a1a;
+padding:30px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+background:#222;
+}
+
+.service-card h3{
+margin-bottom:10px;
+color:#c59d5f;
+}
+/* TEAM */
+
+.team{
+padding:80px 10%;
+background:#000;
+text-align:center;
+}
+
+.team h2{
+font-size:36px;
+margin-bottom:50px;
+}
+
+.team-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.barber-card{
+background:#1a1a1a;
+border-radius:10px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.barber-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.barber-card h3{
+margin-top:15px;
+color:#c59d5f;
+}
+
+.barber-card p{
+padding-bottom:20px;
+}
+
+.barber-card:hover{
+transform:translateY(-10px);
+}
+/* GALLERY */
+
+.gallery{
+padding:80px 10%;
+background:#111;
+text-align:center;
+}
+
+.gallery h2{
+font-size:36px;
+margin-bottom:40px;
+}
+
+.gallery-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+
+.gallery-container img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+transition:0.3s;
+}
+
+.gallery-container img:hover{
+transform:scale(1.05);
+}
+/* WHATSAPP BUTTON */
+
+.whatsapp-btn{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+font-size:28px;
+width:60px;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.whatsapp-btn:hover{
+transform:scale(1.1);
+}
+/* LOCATION */
+
+.location{
+padding:80px 10%;
+background:#000;
+text-align:center;
+}
+
+.location h2{
+font-size:36px;
+margin-bottom:40px;
+}
+
+.map-container{
+border-radius:10px;
+overflow:hidden;
+}
+/* CONTACT */
+
+.contact{
+padding:80px 10%;
+background:#111;
+text-align:center;
+}
+
+.contact h2{
+font-size:36px;
+margin-bottom:40px;
+}
+
+.contact-container{
+display:flex;
+justify-content:center;
+}
+
+form{
+display:flex;
+flex-direction:column;
+width:400px;
+gap:15px;
+}
+
+input, textarea{
+padding:12px;
+border:none;
+border-radius:5px;
+}
+
+textarea{
+height:120px;
+resize:none;
+}
+
+button{
+background:#c59d5f;
+color:white;
+border:none;
+padding:12px;
+border-radius:5px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#e0b46d;
+}
+/* FOOTER */
+
+.footer{
+background:#000;
+padding:60px 10%;
+color:white;
+}
+
+.footer-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+margin-bottom:30px;
+}
+
+.footer-section h3{
+color:#c59d5f;
+margin-bottom:15px;
+}
+
+.footer-section p{
+margin-bottom:8px;
+}
+
+.copyright{
+text-align:center;
+font-size:14px;
+opacity:0.7;
+}
+/* MOBILE */
+
+@media (max-width: 768px){
+
+.hero h1{
+font-size:32px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.services{
+padding:60px 5%;
+}
+
+.team{
+padding:60px 5%;
+}
+
+.gallery{
+padding:60px 5%;
+}
+
+.location{
+padding:60px 5%;
+}
+
+.contact{
+padding:60px 5%;
+}
+
+form{
+width:100%;
+}
+
+.hero-content{
+padding:25px;
+}
+
+}
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:all 0.8s ease;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
