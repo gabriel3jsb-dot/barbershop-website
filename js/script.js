@@ -20,3 +20,10 @@ section.classList.add("active");
 }
 
 window.addEventListener("scroll", revealSections);
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+navLinks.classList.toggle("active");
+});
